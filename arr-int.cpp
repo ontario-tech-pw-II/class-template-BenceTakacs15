@@ -101,6 +101,15 @@ int main()
   z.addEntry(true);
   z.addEntry(true);
 
+  DynamicArray<string> s;
+
+  // Adding entries
+  s.addEntry("Frank");
+  s.addEntry("Wiggum");
+  s.addEntry("Nahasapeemapetilon");
+  s.addEntry("Quimby");
+  s.addEntry("Flanders");
+
   // Output entries
   cout << "List (int):" << endl;
   for (int i = 0; i < x.getSize(); i++)
@@ -111,6 +120,9 @@ int main()
   cout << "List (bool):" << endl;
   for (int i = 0; i < z.getSize(); i++)
 	  cout << z.getEntry(i) << endl;
+  cout << "List (string):" << endl;
+  for (int i = 0; i < s.getSize(); i++)
+	  cout << s.getEntry(i) << endl;
 
   return 0;
 }
